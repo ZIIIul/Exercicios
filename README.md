@@ -1,2 +1,2 @@
 # Exercicios
-Meu exercicio legais em python :D
+Meu exercicio legais :D
