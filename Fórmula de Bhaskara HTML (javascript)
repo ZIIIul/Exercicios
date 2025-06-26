@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <style>
+        .cen
+        {
+            text-align: center;
+        }
+        
+    </style>
+    <title>Document</title>
+    <script>
+        function delta()
+        {
+        let A = eval(document.getElementById("A").value);
+        let B = eval(document.getElementById("B").value);
+        let C = eval(document.getElementById("C").value);
+        
+        let del = (B*B)-4*C*A;
+        let dela = document.getElementById("dela").innerHTML = "Delta = "+del;
+        let del1 = Math.sqrt(del);
+
+        let bak1 = (-B+del1)/(A*2);
+        let bhas1 = document.getElementById("bhas1").innerHTML = "X1 = "+bak1;
+
+        let bak2 = (-B-del1)/(A*2);
+        let bhas2 = document.getElementById("bhas2").innerHTML = "X2 = "+bak2;
+        }
+        </script>
+</head>
+<br><br>
+<body>
+    <form class="cen">
+        <label>Valor de A = </label>
+        <input type="text" id="A"><br><br>
+        <label>Valo de B = </label>
+        <input type="text" id="B"><br><br>
+        <label>Valo de C = </label>
+        <input type="text" id="C"><br><br>
+        <input type="button" value="Enviar" onclick="delta()">
+    </form>
+    <div class="cen">
+    <br><Br>
+    <p id="dela"></p>
+    <p id="bhas1"></p>
+    <p id="bhas2"></p>
+    </div>
+</body>
+
+</html>
